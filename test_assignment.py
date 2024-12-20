@@ -1,10 +1,9 @@
-import unittest
-import json
-import os
-import folium
-import pandas as pd
+import geopy
+from geopy import distance
 from geopy.distance import geodesic
-from bs4 import BeautifulSoup
+
+import folium
+from folium import Map, Marker
 
 class TestMappingAssignment(unittest.TestCase):
     def setUp(self):
